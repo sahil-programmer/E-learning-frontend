@@ -1,0 +1,112 @@
+/* General Container Styles */
+.feedback-container {
+    padding: 60px; /* Space inside the container */
+    max-width: 500px; /* Set a maximum width for the form */
+    margin: 40px auto; /* Center the container and add space above and below */
+    background-color: #212121; /* Dark background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    color: #f9f9f9; /* Light text color for readability */
+}
+
+/* Heading Styles */
+.feedback-container h2 {
+    text-align: center; /* Center the heading */
+    font-size: 2.5rem; /* Larger font size */
+    margin-bottom: 30px; /* Increased space below the heading */
+    color: #f39c12; /* Yellow text color for heading */
+}
+
+/* Feedback Form Styles */
+.feedback-form {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Input Fields */
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%; /* Full width */
+    padding: 14px; /* Comfortable padding */
+    margin: 15px 0; /* Space between inputs */
+    border: 2px solid #f39c12; /* Yellow border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    background-color: #333; /* Dark background for inputs */
+    color: #f9f9f9; /* Light text color for inputs */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus state */
+}
+
+/* Focus State for Input Fields */
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+    border-color: #e67e22; /* Darker yellow on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(246, 196, 8, 0.7); /* Light shadow effect */
+}
+
+/* Rating Styles */
+.rating {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the stars */
+    margin: 20px 0; /* Increased space around the stars */
+}
+
+.star {
+    font-size: 2.5rem; /* Size of the stars */
+    color: #f39c12; /* Default star color */
+    cursor: pointer; /* Pointer cursor for interactive elements */
+    transition: transform 0.2s ease, color 0.2s ease; /* Animation for hover effect */
+    margin: 0 5px; /* Spacing between stars */
+}
+
+.star:hover,
+.star.filled {
+    transform: scale(1.5); /* Scale effect on hover or filled */
+    color: #e67e22; /* Change color on hover or filled */
+}
+
+/* Button Styles */
+.feedback-form button {
+    background-color: #f39c12; /* Yellow button */
+    color: #212121; /* Dark text color */
+    padding: 14px; /* Comfortable padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for hover effects */
+    margin-top: 20px; /* Increased space above the button */
+}
+
+/* Button Hover and Active States */
+.feedback-form button:hover {
+    background-color: #e67e22; /* Darker yellow on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.feedback-form button:active {
+    background-color: #d35400; /* Darker shade when clicked */
+    transform: translateY(1px); /* Slight dip effect on click */
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .feedback-container {
+        padding: 30px; /* Less padding on smaller screens */
+        margin: 20px auto; /* Adjust margin for smaller screens */
+    }
+
+    .feedback-container h2 {
+        font-size: 1.8rem; /* Smaller heading on mobile */
+    }
+
+    .feedback-form button {
+        padding: 10px; /* Smaller button padding */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .star {
+        font-size: 1.8rem; /* Smaller stars on mobile */
+    }
+}

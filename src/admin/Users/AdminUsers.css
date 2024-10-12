@@ -1,0 +1,48 @@
+.admin-users-page {
+    padding: 20px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+  }
+  
+  h1 {
+    color: #ffeb3b; /* Yellow heading */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 12px 15px;
+    border: 1px solid #ffeb3b; /* Yellow border */
+    text-align: left;
+  }
+  
+  .user-table th {
+    background-color: #ffeb3b; /* Yellow background for headers */
+    color: #000; /* Black text */
+    font-weight: bold;
+  }
+  
+  .user-table td {
+    background-color: #333; /* Dark grey background for cells */
+    color: #fff; /* White text for cells */
+  }
+  
+  .update-btn {
+    padding: 8px 12px;
+    background-color: #ffeb3b; /* Yellow button */
+    color: #000; /* Black text */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-btn:hover {
+    background-color: #ffc107; /* Darker yellow on hover */
+  }
+  

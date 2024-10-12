@@ -1,0 +1,190 @@
+/* Lecture Page Layout */
+.lecture-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: linear-gradient(145deg, #0d0d0d, #1a1a1a); /* Gradient background */
+    color: #ffd700; /* Gold text color */
+    min-height: 100vh; /* Ensure full height for a clean look */
+    gap: 20px; /* Space between the left and right sections */
+  }
+  
+  /* Left Side (Video Player & Description) */
+  .left {
+    width: 68%;
+    padding: 20px;
+  }
+  
+  .video-lecture {
+    border: 4px solid #ffd700; /* Gold border for the video */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .video-lecture:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.8); /* Hover effect to make the video pop */
+  }
+  
+  .lecture-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Text shadow for more depth */
+  }
+  
+  .lecture-description {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 10px;
+    opacity: 0.9; /* Slight transparency for subtle effect */
+  }
+  
+  .select-lecture-msg {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Right Side (Lecture List & Add Lecture) */
+  .right {
+    width: 30%;
+    padding: 25px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    max-height: 80vh; /* Limits the height and allows scrolling */
+  }
+  
+  /* Lecture Number List */
+  .lecture-number {
+    padding: 15px;
+    margin-bottom: 12px;
+    background: linear-gradient(145deg, #333333, #444444); /* Gradient background */
+    color: #ffd700; /* Gold text */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    position: relative; /* To position icons or buttons better */
+    display: flex;
+    align-items: center; /* Align the text and buttons in the center */
+    justify-content: space-between; /* Space between the text and delete button */
+  }
+  
+  .lecture-number:hover {
+    background: linear-gradient(145deg, #ffd700, #ffcc00); /* Gold gradient on hover */
+    color: #000000; /* Reverse to black text on hover */
+    transform: scale(1.05); /* Slight scaling for hover effect */
+  }
+  
+  .active {
+    background: linear-gradient(145deg, #ffd700, #ffcc00);
+    color: #000000;
+  }
+  
+  /* Button Styles */
+  .common-btn {
+    background-color: #ffd700;
+    color: #000000;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .common-btn:hover {
+    background-color: #ffcc00;
+    transform: translateY(-3px); /* Elevation on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Bigger shadow on hover */
+  }
+  
+  .add-lecture-btn {
+    margin-bottom: 20px;
+  }
+  
+  .delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    margin: 15px 0; /* Space above and below the delete button */
+    border-radius: 5px;
+    padding: 8px 15px;
+    transition: background 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #e60000; /* Darker red on hover */
+    box-shadow: 0 3px 8px rgba(255, 0, 0, 0.4); /* Subtle shadow on hover */
+  }
+  
+  /* No Lectures Yet Message */
+  .no-lectures-msg {
+    font-size: 18px;
+    color: #ffd700;
+    opacity: 0.8; /* Slight transparency */
+  }
+  
+  /* Lecture Form */
+  .lecture-form {
+    background-color: #292929;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .lecture-form h2 {
+    color: #ffd700;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Text shadow for form heading */
+  }
+  
+  .lecture-form label {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .lecture-form input[type="text"],
+  .lecture-form input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ffd700;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    transition: border 0.3s ease;
+  }
+  
+  .lecture-form input[type="text"]:focus,
+  .lecture-form input[type="file"]:focus {
+    border-color: #ffcc00; /* Lighter gold on focus */
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .lecture-page {
+      flex-direction: column;
+    }
+  
+    .left, .right {
+      width: 100%;
+    }
+  
+    .lecture-title {
+      font-size: 24px;
+    }
+  
+    .lecture-description {
+      font-size: 16px;
+    }
+  }
+  

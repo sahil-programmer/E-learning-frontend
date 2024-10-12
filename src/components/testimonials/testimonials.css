@@ -1,0 +1,120 @@
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 20px; 
+    background-color: #2c3e50; /* Dark, professional background */
+    text-align: center; 
+    border-radius: 20px; /* Smoother rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Section shadow for depth */
+}
+
+/* Heading Styles */
+.testimonials h2 {
+    font-size: 40px; 
+    margin-bottom: 40px; 
+    color: #ffd700; /* Elegant gold for heading */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+    font-weight: 700; /* Bold font for emphasis */
+    letter-spacing: 1.2px;
+}
+
+/* Cards Container */
+.testimonials-cards {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 30px; /* Larger gap for spacing */
+}
+
+/* Testimonial Card Styles */
+.testimonial-card {
+    background-color: #444444; /* Sleek dark card background */
+    border-radius: 20px; /* Larger rounded corners for elegance */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Softer shadow for default state */
+    padding: 30px; 
+    max-width: 320px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+
+/* Image Styles */
+.testimonial-image {
+    border-radius: 50%; /* Circular images */
+    width: 90px; 
+    height: 90px; 
+    object-fit: cover; 
+    margin-bottom: 20px; /* More space below the image */
+    border: 3px solid #ffd700; /* Gold border for a premium look */
+}
+
+/* Position Text */
+.testimonial-position {
+    font-size: 15px; 
+    color: #bbbbbb; /* Softer light gray for position */
+    margin-bottom: 15px; 
+    font-style: italic; /* Adds emphasis */
+}
+
+/* Testimonial Message */
+.testimonial-message {
+    font-size: 17px; 
+    line-height: 1.6; /* Improved line height for readability */
+    color: #ffffff; 
+    margin-top: 15px; /* Space above message */
+    position: relative;
+    text-align: left; /* Align messages for a structured look */
+}
+
+/* Quotation Mark Styling */
+.testimonial-message::before {
+    content: '“'; /* Opening quote mark */
+    font-size: 50px; 
+    color: #ffd700; /* Gold for the quotation mark */
+    position: absolute; 
+    left: -15px; 
+    top: -15px;
+}
+
+.testimonial-message::after {
+    content: '”'; /* Closing quote mark */
+    font-size: 50px;
+    color: #ffd700;
+    position: absolute;
+    right: -15px;
+    bottom: -15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .testimonials-cards {
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        max-width: 100%; /* Full width on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials {
+        padding: 40px 10px;
+    }
+
+    .testimonials h2 {
+        font-size: 32px; /* Slightly smaller heading for smaller screens */
+    }
+
+    .testimonial-message {
+        font-size: 15px; /* Adjust text size for mobile */
+        line-height: 1.4;
+    }
+
+    .testimonial-image {
+        width: 70px;
+        height: 70px;
+        border: 2px solid #ffd700;
+    }
+}

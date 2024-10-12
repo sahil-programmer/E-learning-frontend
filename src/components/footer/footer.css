@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.footer {
+    background-color: #1a1a1a; /* Dark gray for a more modern look */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 30px; /* Increased padding for a spacious feel */
+    flex-shrink: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin-bottom: 20px; /* Increased spacing for better separation */
+    font-size: 15px; /* Slightly larger font size */
+    line-height: 1.5; /* Improved readability */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Increased gap for a cleaner look */
+}
+
+.social-icon {
+    color: #ffffff; /* White social icon color */
+    font-size: 48px;
+    transition: color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+}
+
+.social-icon:hover {
+    color: #ffd700; /* Gold color on hover for a premium feel */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+@media (max-width: 600px) {
+    .social-icon {
+        font-size: 36px;
+    }
+
+    .footer p {
+        font-size: 14px; /* Adjusted font size for mobile */
+    }
+
+    .social-links {
+        gap: 30px; /* Reduced gap on mobile */
+    }
+}

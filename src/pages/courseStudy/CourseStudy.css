@@ -1,0 +1,60 @@
+/* Course Study Page Styles */
+.course-study-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items horizontally */
+    justify-content: center; /* Center the items vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #e6f0ff; /* Light blue background */
+    font-family: 'Arial', sans-serif;
+    padding: 20px; /* Padding for better spacing */
+  }
+  
+  .course-image {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 4px solid #ffd700; /* Gold border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space below the image */
+  }
+  
+  .course-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000; /* Black for better contrast */
+    margin: 10px 0;
+    text-align: center; /* Centered text */
+  }
+  
+  .course-description {
+    font-size: 20px;
+    color: #333333; /* Dark gray for description */
+    margin: 10px 0;
+    text-align: center; /* Centered text */
+  }
+  
+  .course-creator,
+  .course-duration {
+    font-size: 18px;
+    color: #000000; /* Black for better contrast */
+    margin: 5px 0;
+    text-align: center; /* Centered text */
+  }
+  
+  .lectures-link {
+    margin-top: 20px; /* Space above the link */
+    text-decoration: none; /* Remove underline */
+    background-color: #ffd700; /* Gold background */
+    color: black; /* Black text color */
+    padding: 12px 20px; /* Padding for the button */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  }
+  
+  .lectures-link:hover {
+    background-color: #fbc02d; /* Darker gold on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  

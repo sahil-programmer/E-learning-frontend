@@ -1,0 +1,95 @@
+.course-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff; /* Clean white background */
+  padding: 25px;
+  border-radius: 16px; /* Larger border radius for a smoother look */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 360px; /* Adjusted max-width for better sizing */
+  margin: 20px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Soft border */
+  overflow: hidden; /* Prevent overflow */
+  position: relative; /* Positioning for pseudo-elements */
+}
+
+.course-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25); /* Increased shadow on hover */
+}
+
+.course-image {
+  width: 100%;
+  height: 240px; /* Increased height for better visuals */
+  object-fit: cover;
+  border-radius: 12px; /* More rounded corners */
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Soft border */
+  transition: transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.course-card:hover .course-image {
+  transform: scale(1.05); /* Scale image on hover */
+}
+
+.course-info h3 {
+  font-size: 28px; /* Increased font size for course title */
+  color: #000000; /* Black color for strong contrast */
+  margin-bottom: 12px;
+  font-weight: 700;
+  text-transform: uppercase; /* Title in uppercase */
+  letter-spacing: 1px; /* Spacing for emphasis */
+}
+
+.course-info p {
+  font-size: 18px; /* Slightly larger font size */
+  color: #2c3e50; /* Dark blue for better readability */
+  margin-bottom: 10px;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.course-info p:nth-child(3) {
+  color: #d4af37; /* Gold color for price */
+  font-weight: bold;
+}
+
+.course-info p:nth-child(4) {
+  color: #ff5722; /* Highlight color for duration */
+  font-weight: 500;
+}
+
+.common-btn {
+  margin-top: 15px;
+  padding: 14px 28px; /* More substantial padding */
+  background-color: #d4af37; /* Gold background */
+  color: #000000; /* Black text */
+  border: 2px solid transparent; /* Transparent border */
+  border-radius: 10px; /* More rounded corners */
+  font-size: 18px; /* Larger button font */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Added box-shadow transition */
+  position: relative; /* Positioning for pseudo-elements */
+}
+
+.common-btn:hover {
+  background-color: #f0c36d; /* Lighter gold on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Subtle shadow on hover */
+}
+
+.common-btn:active {
+  background-color: #c89f2a; /* Darker gold when active */
+  transform: scale(0.95); /* Scale down on active */
+}
+
+/* Styles for Delete Button */
+.delete-btn {
+  background-color: red; /* Red background for delete button */
+  color: #ffffff; /* White text */
+}
+
+.delete-btn:hover {
+  background-color: darkred; /* Darker red on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}

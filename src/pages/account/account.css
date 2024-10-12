@@ -1,0 +1,91 @@
+.account-section {
+    background-color: #e6f0ff;
+    color: #2c3e50;
+    padding: 50px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.account-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.account-container:hover {
+    transform: translateY(-5px);
+}
+
+.account-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #6f2c91;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.account-details {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.account-details p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.common-btn {
+    padding: 12px 25px;
+    background-color: #ffd700;
+    color: #2c3e50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.common-btn:hover {
+    background-color: #fbc02d;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+    .account-container {
+        padding: 20px 15px;
+    }
+
+    .account-container h1 {
+        font-size: 28px;
+    }
+
+    .account-details p {
+        font-size: 16px;
+    }
+
+    .common-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}

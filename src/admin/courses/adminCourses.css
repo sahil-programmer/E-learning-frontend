@@ -1,0 +1,113 @@
+/* General Styles */
+
+
+/* Admin Courses Page */
+.admin-courses-page {
+    padding: 20px;
+}
+
+/* Add Course Button */
+.submit-btn {
+    background-color: #f0e68c; /* Golden background */
+    color: #101010; /* Black text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #d1c94a; /* Darker golden on hover */
+}
+
+/* Courses List */
+.courses-list {
+    margin-top: 20px;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.modal-content {
+    background-color: #0d0d0d; /* Dark black modal background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    transform: translateY(-50px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0; /* Initially hidden */
+}
+
+.modal-content.show {
+    transform: translateY(0); /* Slide into view */
+    opacity: 1; /* Fade in */
+}
+
+/* Form Styles */
+.course-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #f0e68c; /* Golden text for labels */
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f0e68c; /* Golden border */
+    border-radius: 5px;
+    background-color: #1a1a1a; /* Dark input background */
+    color: #f0e68c; /* Golden text in inputs */
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #d1c94a; /* Highlight border on focus */
+    outline: none;
+}
+
+/* Image Preview */
+.image-preview {
+    margin-top: 10px;
+    max-width: 150px; /* Set a max width for the preview */
+    max-height: 100px; /* Set a max height for the preview */
+    border: 1px solid #f0e68c; /* Golden border for preview */
+    border-radius: 5px;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+}

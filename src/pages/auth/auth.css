@@ -1,0 +1,114 @@
+/* Auth Container Styles */
+.auth-container {
+    max-width: 350px; /* Maximum width for the container */
+    margin: 50px auto; /* Center the container with vertical margin */
+    padding: 30px; /* Padding for inner space */
+    background: #000000; /* Black background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 30px rgba(255, 215, 0, 0.3); /* Gold shadow for premium look */
+    animation: fadeIn 0.4s ease; /* Fade-in animation */
+}
+
+/* Keyframes for Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px); /* Start further below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+/* Heading Styles */
+.auth-container h2 {
+    text-align: center; /* Center the heading */
+    color: #ffd700; /* Gold color for heading */
+    font-size: 28px; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below heading */
+    font-weight: bold; /* Bold weight */
+    text-shadow: 0 1px 5px rgba(255, 255, 255, 0.1); /* Soft shadow for depth */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Input Fields */
+.auth-container input {
+    padding: 10px; /* Adjusted padding for comfort */
+    margin: 10px 0; /* Space between inputs */
+    margin-right: 15px; /* Right margin for spacing */
+    border: 1px solid #ffd700; /* Gold border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Font size for input text */
+    width: calc(100% - 15px); /* Adjust width to account for the right margin */
+    box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.1); /* Subtle inner shadow */
+    background-color: #333333; /* Dark background inside inputs */
+    color: #ffffff; /* White text inside inputs */
+    transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease; /* Smooth transitions */
+}
+
+/* Input Focus Effect */
+.auth-container input:focus {
+    border-color: #ffd700; /* Gold border on focus */
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.5); /* Gold glow effect */
+    outline: none; /* Remove default outline */
+    transform: scale(1.02); /* Slightly enlarge input on focus */
+}
+
+/* Button Styles */
+.auth-container button {
+    padding: 10px; /* Increased padding for better touch targets */
+    background-color: #ffd700; /* Gold background */
+    color: #000000; /* Black text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button text */
+    transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease; /* Smooth transitions */
+}
+
+/* Button Hover Effect */
+.auth-container button:hover {
+    background-color: #fff3b0; /* Lighter gold on hover */
+    transform: translateY(-4px) scale(1.05); /* Lift and enlarge effect */
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4); /* Shadow on hover */
+}
+
+/* Text Paragraph */
+.auth-container p {
+    text-align: center; /* Center the paragraph */
+    margin-top: 15px; /* Space above the paragraph */
+    font-size: 14px; /* Font size for text */
+    color: #ffffff; /* White color for paragraph text */
+}
+
+/* Link Styles */
+.auth-container a {
+    color: #ffd700; /* Gold color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium weight */
+    transition: color 0.4s ease; /* Smooth color transition */
+}
+
+/* Link Hover Effect */
+.auth-container a:hover {
+    color: #fff3b0; /* Lighter gold on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 500px) {
+    .auth-container {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .auth-container h2 {
+        font-size: 24px; /* Smaller heading on mobile */
+    }
+}

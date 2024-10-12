@@ -1,0 +1,85 @@
+.course-description {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #e6f0ff; /* Light blue background */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.course-description .course-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.course-description .course-image {
+  width: 350px; /* Fixed width */
+  height: 250px; /* Fixed height */
+  object-fit: cover;
+  border-radius: 8px;
+  border: 4px solid #ffd700; /* Gold border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-description .course-info {
+  flex: 1; /* Allows the info section to take remaining space */
+  padding-left: 20px;
+}
+
+.course-description .course-info h2 {
+  font-size: 32px;
+  font-weight: 700; /* Bold font weight */
+  color: #2c3e50; /* Dark blue color */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.course-description .course-info p {
+  font-size: 18px; /* Font size for course details */
+  color: #000000; /* Black color */
+  margin: 5px 0; /* Vertical spacing for paragraphs */
+}
+
+.course-description p {
+  font-size: 20px; /* Font size for main description */
+  color: #000000; /* Black color for main description */
+  font-weight: 600; /* Semi-bold font */
+  margin-top: 20px; /* Space above the main description */
+}
+
+.course-description .common-btn {
+  background-color: #ffd700; /* Gold background for buttons */
+  color: #2c3e50; /* Dark blue text color */
+  border: none;
+  padding: 12px 24px; /* Button padding */
+  font-size: 18px; /* Font size */
+  font-weight: 700; /* Bold font weight */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+.course-description .common-btn:hover {
+  background-color: #fbc02d; /* Lighter gold on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+@media (max-width: 768px) {
+  .course-description .course-header {
+    flex-direction: column; /* Stack items on smaller screens */
+    align-items: center; /* Center align */
+    text-align: center; /* Centered text */
+  }
+
+  .course-description .course-image {
+    width: 100%; /* Full width on small screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .course-description .common-btn {
+    width: 100%; /* Full width button */
+    margin-top: 15px; /* Space above the button */
+  }
+}
